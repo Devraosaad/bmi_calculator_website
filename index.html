@@ -1,0 +1,68 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: grey;
+        }
+        .container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> Enter the height and weight to calcualte the Bmi </h1>
+        <h2>BMI Calculator</h2>
+        <form id="bmiForm">
+            <label for="height">Height (in meters):</label>
+            <input type="number" id="height" step="0.01" required>
+
+            <label for="weight">Weight (in kilograms):</label>
+            <input type="number" id="weight" step="0.1" required>
+
+            <button type="submit">Calculate BMI</button>
+        </form>
+        <p id="result"></p>
+        <div id = "weight - guide">
+            <h3> BMI Weight Guide </h3>
+            <p>Under - Weight = Less then 18.6</p>
+            <p>Normal- Weight = 18.6 to 24.9</p>
+            <p>Over - Weight = Greater then 24.9</p>
+        </div>
+
+    </div>
+    <script src="1.js"></script>
+</body>
+</html>
